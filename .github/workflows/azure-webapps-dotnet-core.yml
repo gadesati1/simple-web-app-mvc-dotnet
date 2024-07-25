@@ -88,4 +88,4 @@ jobs:
         uses: azure/webapps-deploy@v3
         with:
           app-name: ${{ env.AZURE_WEBAPP_NAME }}
-          package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/SampleNETApp
+          package: ${{ github.workspace }}/SampleNETApp
